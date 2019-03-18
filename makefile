@@ -7,7 +7,7 @@ build:
 
 .PHONY: run
 run:
-		@./$(BUILD_DIR)/$(NAME)
+		@$(BUILD_DIR)/$(NAME)
 
 .PHONY: fmt
 fmt:
