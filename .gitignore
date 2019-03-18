@@ -1,0 +1,11 @@
+# config
+config.json
+
+# dependencies
+vendor/
+
+# for macOS environment
+.DS_Store
+
+# other
+.idea/
