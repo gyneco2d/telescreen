@@ -11,11 +11,10 @@ run:
 
 .PHONY: fmt
 fmt:
-		@go fmt
+		@go fmt ./cmd/$(NAME)
 
 .PHONY: test
-test:
-		fmt build run
+test:	fmt build run
 
 .PHONY: clean
 clean:

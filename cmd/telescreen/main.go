@@ -15,19 +15,19 @@ import (
 )
 
 type Config struct {
-	BotUserToken string `json:"botUserToken"`
+	BotUserToken      string `json:"botUserToken"`
 	AnnounceChannelID string `json:"announceChannelID"`
 }
 
 type Request struct {
-	Token string `json:"token"`
+	Token     string `json:"token"`
 	Challenge string `json:"challenge"`
 	EventType string `json:"type"`
 }
 
 var (
-	botId	string
-	botName	string
+	botId   string
+	botName string
 )
 
 func run(api *slack.Client, config Config) int {
